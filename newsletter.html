@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kish Kalakriti Newsletter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #8B4513;
+            margin-bottom: 10px;
+        }
+        .content {
+            margin-bottom: 30px;
+            padding: 15px;
+        }
+        .section-title {
+            color: #8B4513;
+            border-bottom: 1px solid #DEB887;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #DEB887;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .unsubscribe {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #999;
+            text-align: center;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .date {
+            text-align: right;
+            font-size: 0.8em;
+            color: #888;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #8B4513;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="date">{{CURRENT_DATE}}</div>
+    
+    <div class="header">
+        <h1>{{BUSINESS_NAME}}</h1>
+        <p><em>Handcrafted with Love</em></p>
+    </div>
+
+    <div class="content">
+        <p>Dear {{SUBSCRIBER_NAME}},</p>
+
+        <p>Welcome to Kish Kalakriti's newsletter! We're delighted to have you join our community.</p>
+        
+        <p>Here, you'll receive regular updates about our latest creations, special offers, and exclusive promotions - all delivered straight to your inbox.</p>
+
+        <h3 class="section-title">Exciting News!</h3>
+        {{CONTENT}}
+
+        <p>At Kish Kalakriti, we specialize in handcrafted gifts, home decor, and jewelry - each piece made with love and attention to detail. Our artisans pour their heart into creating unique items that bring warmth and beauty to your space.</p>
+        
+        <p>We hope you enjoy being part of our creative journey!</p>
+    </div>
+
+    <div class="footer">
+        <p>Best regards,<br>
+        {{BUSINESS_NAME}} Team</p>
+        <p>
+            {{BUSINESS_PHONE}}<br>
+            {{BUSINESS_EMAIL}}<br>
+            <a href="{{BUSINESS_WEBSITE}}">{{BUSINESS_WEBSITE}}</a><br>
+            <a href="{{BUSINESS_SOCIAL}}">Instagram: @kish.kalakriti</a>
+        </p>
+    </div>
+
+    <div class="unsubscribe">
+        <p>To unsubscribe from our newsletter, please reply to this email with 'UNSUBSCRIBE' in the subject line.</p>
+    </div>
+</body>
+</html>
